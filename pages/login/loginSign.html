@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+	<link rel="stylesheet" href="login.css">
+   
+</head>
+<body>
+   
+    <div class="container" id="container">
+        
+        <div class="form-container sign-up-container">
+            <div class="scrollable-form"><form class="sign-up-htm" action="register.php" method="post" id="Formsignup">
+                <h1>Create Account</h1>
+               
+                
+                <div class="group">
+                    
+                    <input placeholder="Your Name" id="fristname" required required pattern="[a-zA-Z]+" title=" alphabets characters only" type="text" class="input" name="fristname">
+                </div>
+                
+                <div class="group">
+                    
+                    <input placeholder="Username" id="Username" required  type="text" class="input" name="fristname">
+                </div>
+                
+              
+             
+                <div class="group">
+                   
+                    <input placeholder="EmailAddress" id="EmailAddress" type="text" class="input" required name="EmailAddress">
+                    <p id="emailtex" class="hiden" style="font-weight: bold; position: sticky; font-size: 1.5vmin; color: red  ;">Email should be like this example@example.com</p>
+                </div>
+                <div class="group">
+                    
+                    <input placeholder="password" id="Password" type="password" class="input" data-type="password" name="passwordsing" required>
+                    <p id="Passwordtex" class="hiden" style=" font-weight: bold; position: sticky; font-size: 1.5vmin; color: red  ;">Password must contain capital and small letters,numbers and a symbol</p>
+                </div>
+                
+                <div class="group">
+                    
+                    <input placeholder="confirmPassword" id="confirmPassword" type="password" class="input" data-type="password" required name="confirmPassword">
+                    <p id="ConfirmPasswordtex" class="hiden" style="font-weight: bold; position: sticky; font-size: 1.5vmin; color: red  ;">The two passwords doesn't match</p>
+                </div>
+                <div class="group">
+                    <button type="submit" class="button" value="Submit" name="singup">sing-up </button>
+                </div>
+              
+            </form></div>
+            
+            
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Login</h1>
+                
+                <span>or use your account</span>
+                <input type="email" placeholder="Email" / required>
+                <input type="password" placeholder="Password" / required>
+              
+                <button>Login</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="host" id="signIn" >Login</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Harm!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signUp" >Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <script src="reg.js"></script>
+  
+    
+</body>
+
+</html>
